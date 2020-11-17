@@ -1,0 +1,76 @@
+body{
+    margin: 0px;
+    /*background: url('../images/cover_bg.png') no-repeat;*/
+    background: url('../images/xiongchumo_bg_1.jpg') no-repeat;
+    background-size: 100%;
+    /*background-size: 175%;*/
+    background-position: top;
+}
+.right{
+    width: 202px;
+    /* height: 390px; */
+    float: right;
+    display: grid;
+    position: absolute;
+    right: 23%;
+    top: 33%;
+}
+#logo{
+    width: 217px;
+}
+.btn {
+    width: 148px;
+    height: 228px;
+    /* display: grid; */
+    right: 34%;
+    top: 73%;
+}
+
+.btn img {
+    width: 236px;
+    cursor: pointer;
+    margin-top: 20px;
+}
+
+#hide1 {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: none;
+    opacity: 0.9;
+    background: #5b7a9396;
+}
+
+#help,
+#about {
+    z-index: 2;
+    display: none;
+    position: absolute;
+    top: 25%;
+    left: 30%;
+    opacity: 0.9;
+    background: url('../images/alert.png') no-repeat;
+    background-size: 100% auto; 
+    width: 655px;
+    height: 349px;
+}
+
+#help p,
+#about p {
+    font-size: 18px;
+    color: white;
+    width: 600px;
+    position: absolute;
+    top: 15%;
+    left: 6%;
+}
+p b{
+    color: yellow;
+}
+#goback,#goback2 {
+    width: 100px;
+    cursor: pointer;
+}

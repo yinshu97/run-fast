@@ -1,0 +1,354 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	background: no-repeat url('../bg/6.jpg');
+	/*background-repeat: no-repeat;*/
+	background-size: 100%;
+	background-position-x: center;
+	overflow: hidden;
+}
+
+/*弹窗*/
+.alert {
+	/*flex: 7;*/
+	width: 100%;
+	height: 100%;
+	margin: 0 auto;
+	display: none;
+	text-align: center;
+	vertical-align: middle;
+	position: absolute;
+	font-size: 1.2rem;
+	font-weight: 800;
+	font-family: 微软雅黑;
+	z-index: 5;
+}
+
+.alert-div {
+	position: absolute;
+	width: 21%;
+	/*height: 10%;*/
+	/*margin: 15% 40%;*/
+	top: 40%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	border: 0.2rem solid white;
+	border-radius: 1rem;
+	background: linear-gradient(cornflowerblue, gainsboro);
+	opacity: 0.8;
+	padding: 2.5rem;
+}
+
+.alert-btn {
+	display: none;
+	position: relative;
+	margin-top: 1rem;
+}
+
+.alert-btn img:first-child {
+	position: absolute;
+	width: 3rem;
+	left: 2rem;
+	cursor: pointer;
+}
+
+.alert-btn img:last-child {
+	position: absolute;
+	width: 3rem;
+	right: 2rem;
+	cursor: pointer;
+}
+
+
+/*头部*/
+
+.top {
+	position: relative;
+	width: 100%;
+	height: 15%;
+	opacity: 0.5;
+	display: flex;
+	flex-direction: row;
+	background-color: rgba(78, 110, 242, 1);
+}
+
+.top-left {
+	height: 100%;
+	padding-top: 1rem;
+	/*float: left;*/
+	flex: 11;
+	color: orange;
+	/*text-align: center;*/
+	vertical-align: middle;
+}
+
+.return {
+	float: left;
+	margin-left: 1%;
+}
+
+.return img {
+	width: 70%;
+}
+
+.top-right {
+	height: 100%;
+	flex: 2;
+	float: right;
+	padding-right: 0.5rem;
+}
+
+
+/*豆子*/
+
+.bean {
+	height: 3rem;
+	/*width: 100%;*/
+	margin: 0.5rem 10%;
+	margin-left: 10%;
+	border-radius: 1.5rem;
+	display: flex;
+	flex: 1;
+	flex-direction: row;
+	/*padding: 0.1rem;*/
+	font-size: 1.5rem;
+	background: lightsteelblue;
+	line-height: 39px;
+}
+
+.beanImg {
+	flex: 1;
+}
+
+.beanImg img {
+	height: 90%;
+	padding: 0.2rem;
+	
+}
+
+.beanNum {
+	flex: 2;
+	text-align: center;
+	margin-top: 0.2rem;
+	/*line-height: 39px;*/
+}
+
+.beanAdd {
+	flex: 1;
+	text-align: right;
+	margin-right: 10px;
+}
+
+.beanAdd h2 {
+	cursor: pointer;
+}
+
+
+/*内容*/
+
+.container {
+	position: relative;
+	width: 100%;
+	height: 90%;
+	padding-top: 8%;
+	/*opacity: 0.9;*/
+	display: flex;
+}
+
+
+/*侧边栏*/
+
+.nav {
+	width: 15%;
+	height: 80%;
+	display: inline-block;
+	background-color: rgba(231, 234, 237, 0.6);
+}
+
+.nav-list {
+	text-align: center;
+	color: saddlebrown;
+	display: block;
+	padding-top: 15%;
+	padding-bottom: 15%;
+	border-bottom: 0.1rem solid gainsboro;
+	cursor: pointer;
+}
+
+.play {
+	background: rgba(243, 169, 41, 0.7);
+	color: whitesmoke;
+}
+
+.addBean {
+	border-bottom: none;
+}
+
+.nav-content {
+	width: 70%;
+	display: inline-block;
+	position: relative;
+	margin: 114px auto;
+}
+
+.level-bigBox {
+	width: 100%;
+	/*position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);*/
+}
+
+.level-list {
+	position: relative;
+	/*width: 23%;*/
+	/*height:80%;*/
+	width: 12.5rem;
+	height: 20.5rem;
+	margin:0 1.5rem ;
+	display: inline-block;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.level-list img {
+	margin: 0.2rem;
+	border-radius: 0.6rem;
+	height: 20rem;
+	width: 12rem;
+	/*box-shadow:4px 4px 10px goldenrod;*/
+	/*box-shadow: 0 0 10px #f00;*/
+}
+
+.level-list .level-boder {
+	display: none;
+	position: absolute;
+	margin-top: -0.2rem;
+	margin-left: -12.6rem;
+	width: 12.8rem;
+	height: 20.8rem;
+	/*background: linear-gradient(red, white, yellow);
+	opacity: 0.8;*/
+}
+
+.level-list:hover .level-boder {
+	display: inline-block;
+}
+
+
+/*快速开始*/
+
+.fastBtn {
+	/*display: inline-block;*/
+	position: relative;
+	width: 14rem;
+	height: 12rem;
+	margin-left: 55rem;
+	margin-top: 4rem;
+}
+
+.fastBtn img {
+	width: 14rem;
+	display: inline-block;
+	cursor: pointer;
+}
+
+#quickStart {
+	display: inline-block;
+	position: absolute;
+	left: 75%;
+	top: 20%;
+	color: whitesmoke;
+}
+
+
+/*游戏帮助*/
+
+.help-content {
+	height: 100%;
+	/*width: 70%;*/
+	margin: 0 auto;
+	display: none;
+}
+
+.help-bigBox {
+	position: relative;
+	width: 65%;
+	height: 100%;
+	margin: auto;
+	padding: 2rem;
+	border-radius: 0.6rem;
+	border: 0.2rem solid whitesmoke;
+	background: linear-gradient(cornflowerblue, gainsboro);
+	opacity: 0.9;
+	/*background: linear-gradient(burlywood,lightgoldenrodyellow);*/
+	animation: zoom-action 1s;
+}
+
+@keyframes zoom-action {
+	0% {
+		transform: scale(0.2);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 0.9;
+	}
+}
+
+.help-content img {
+	position: absolute;
+	bottom: -4rem;
+	right: -6rem;
+	width: 10rem;
+}
+
+.addBean-content img {
+	position: absolute;
+	top: -4rem;
+	left: -4rem;
+	width: 10rem;
+}
+
+.help-con p {
+	color: grey;
+	font-size: 1.5rem;
+	font-family: 楷体;
+}
+
+
+/*看视频免费得豆*/
+
+.addBean-content .help-bigBox {
+	width: 53.5rem;
+	height: 30rem;
+	padding: 0.5rem;
+}
+
+.addBean-content .addBean-con {
+	height: 20rem;
+}
+
+.addBean-content video {
+	/*width: 20rem;*/
+	/*margin-top: 0.25rem;*/
+	height: 30rem;
+	/*border:0.5rem solid ;*/
+	border-radius: 0.5rem;
+}
+
+
+/*倒计时*/
+
+.addBean-content span {
+	position: absolute;
+	top: 1rem;
+	right: 1rem;
+	font-size: 1rem;
+	color: white;
+}

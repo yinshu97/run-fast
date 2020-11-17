@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" type="text/css" href="css/alert.css" />
+		<title></title>
+	</head>
+	<body>
+
+		<!-- 背景-->
+		<div class="bg">
+			<button id="myBtn">退出牌桌</button>
+		</div>
+
+		<!--退出提示框-->
+		<div id="hide">
+			<div class="left_alert">
+				<img src="img/leave.png" />
+
+				<div class="alert_content">
+					<!--<span><h2>离开牌桌</h2></span>
+					<span><h3>确定要离开牌桌吗？</h3></span>-->
+					<div class="cancel">
+						<div class="pic1">
+							<a href="#" id="qvxiao" class="qvxiao"><img src="img/yellow_btn.png" /></a>
+						</div>
+						<div class="canceltext">
+							<a href="#" id="qvxiao2" class="qvxiao2"><img src="img/cancle.png" /></a>
+						</div>
+					</div>
+					<div class="exit">
+						<div class="pic2">
+							<a href="#" id="tuichu" class="tuichu"> <img src="img/blue_btn.png" /></a>
+						</div>
+						<div class="exittext">
+							<a href="#" id="tuichu2" class="tuichu2"><img src="img/exit.png" /></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!--换场提示框 -->
+		<div id="hide2">
+			<div class="transition_alert">
+				<img src="img/Upgrade.png" />
+
+				<div class="transition_content">
+					<!--<span><h2>大神，您的游戏豆超出当前房间的上限了！真是厉害啊，快去高分房间赢更多游戏豆吧！</h2></span>-->
+				<div class="go">
+						<div class="pic3">
+							<a href="#" id="ljqw" class="ljqw"><img src="img/yellow_btn.png" /></a>
+						</div>
+						<div class="gotext">
+							<a href="#" id="ljqw2" class="ljqw2"><img src="img/ljqw.png" /></a>
+						</div>
+					</div>	
+					
+				</div>
+			</div>
+		</div>
+		
+		
+        
+        
+        
+        
+		<script type="text/javascript">
+			// 获取弹窗
+			var modal = document.getElementById('hide');
+			// 打开弹窗的按钮对象
+			var btn = document.getElementById("myBtn");
+			// 获取 <span> 元素，用于关闭弹窗
+			var cancel = document.getElementById('qvxiao');
+			var cancel2 = document.getElementById('qvxiao2');
+			// 点击按钮打开弹窗
+			var Beans =700.0;
+			var modal2 = document.getElementById('hide2');
+		    var tuichu = document.getElementById("tuichu");
+		    var tuichu2 = document.getElementById("tuichu2");
+			btn.onclick = function() {
+				modal.style.display = "block";
+			}
+			var ljqw = document.getElementById("ljqw");
+			var ljqw2 = document.getElementById("ljqw2");
+			// 
+			//// 点击取消, 关闭弹窗
+			cancel.onclick = function() {
+				modal.style.display = "none";
+			}
+			cancel2.onclick = function() {
+				modal.style.display = "none";
+			}
+			//点击退出返回首页
+			tuichu.onclick = function(){
+				window.location.href="首页.html";
+			}
+			tuichu2.onclick = function(){
+				window.location.href="首页.html";
+			}
+			if(Beans>5000)
+			{
+				modal2.style.display="block";
+			}
+			ljqw.onclick = function(){
+				window.location.href="首页.html";
+			}
+			ljqw2.onclick = function(){
+				window.location.href="首页.html";
+			}
+		</script>
+	</body>
+
+</html>

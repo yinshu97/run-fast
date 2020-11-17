@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>跑得快</title>
+		<link rel="stylesheet" type="text/css" href="../css/start.css" />
+	</head>
+
+	<body>
+		<!--弹窗-->
+		<div class="alert">
+			<div class="alert-div">
+				<span id="alertSpan"></span>
+				<div class="alert-btn">
+					<img src="../images/sure.png" />
+					<img src="../images/cancle.png" />
+				</div>
+			</div>
+		</div>
+		<!--头部-->
+		<section class="top">
+			<div class="top-left">
+				<!--返回登录页-->
+				<div class="return">
+					<a href="../login.html"><img src="../images/return.png" alt="" /></a>
+				</div>
+				<div class="must">
+					<h1><i>经典16张跑得快· 必出</i></h1>
+				</div>
+			</div>
+			<div class="top-right">
+				<!--豆子-->
+				<div class="bean">
+					<div class="beanImg">
+						<img src="../images/bean.png" />
+					</div>
+					<div class="beanNum">
+						<h4 id="beanCount">0</h4></div>
+					<div class="beanAdd">
+						<h2>+</h2>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!--内容-->
+		<section class="container">
+			<!--侧边栏-->
+			<div class="nav">
+				<div class="nav-list play">
+					<h2><i>经典玩法</i></h2>
+				</div>
+				<div class="nav-list help">
+					<h2><i>游戏帮助</i></h2>
+				</div>
+				<div class="nav-list about">
+					<h2><i>关于游戏</i></h2>
+				</div>
+				<div class="nav-list addBean">
+					<h2><i>免费得豆</i></h2>
+				</div>
+			</div>
+			<!--场次-->
+			<div class="level nav-content">
+				<div class="level-bigBox">
+					<!--菜鸟场-->
+					<div class="level-list lower">
+						<img src="../images/lower.png" alt="" />
+						<!--<div class="level-boder"></div>-->
+						<img class="level-boder" src="../images/border.png" / alt="">
+					</div>
+					<!--平民场-->
+					<div class="level-list low">
+						<img src="../images/low.png" />
+						<img class="level-boder" src="../images/border.png" / alt="">
+					</div>
+					<!--官家场-->
+					<div class="level-list high">
+						<img src="../images/high.png" />
+						<img class="level-boder" src="../images/border.png" / alt="">
+					</div>
+					<!--土豪场-->
+					<div class="level-list higher">
+						<img src="../images/higher.png" />
+						<img class="level-boder" src="../images/border.png" / alt="">
+					</div>
+					<!--快速开始-->
+					<div class="fastBtn">
+						<img id="startGame" src="../images/quickstart.png" alt="" />
+						<i><h4 id="quickStart"></h4></i>
+					</div>
+				</div>
+			</div>
+
+			<!--游戏帮助-->
+			<div class="help-content nav-content">
+				<div class="help-bigBox">
+					<img src="../images/ch-female2.png" alt="" />
+					<div class="help-con">
+						<p>
+							<b>发牌</b>：第一盘由拿到♠3的人先出，以后每局都由上把赢家出牌
+							<br></br>
+							<b>出牌</b>：顺时针方向轮流出牌，后一家打出的牌必须比前一家大，如果没有可以不出，要得起必须出 如果其他游戏者都不要，则最后出牌的一方可以出任意牌型
+							<br></br>
+							<b>牌点大小</b>： 本游戏的牌点由大到小排列为2,A,K,Q,J,10,9,8,7,6,5,4,3
+							<br></br>
+							<b>牌型</b>： 单张，对子、三同张、连对、连同三张（带任意两张）、顺子、飞机、炸弹等，炸弹能打得起任意牌型，所有牌型根据牌点确定大小
+						</p>
+					</div>
+				</div>
+
+			</div>
+			<!--关于游戏-->
+			<div class="about-content help-content nav-content">
+				<div class="help-bigBox">
+					<img src="../images/ch-male1.png" alt="" />
+					<div class="help-con about-con">
+						<p>
+							<b>出牌计时</b>： 超过15s，强制出牌（并自动托管功能），强制出牌的一个规则（托管模式下系统优先出牌的情况：要得起上一家则打出要得起的最小的牌，为当前出任意牌的一方则出最小可出的单牌/对子/三同张/炸弹）
+							<br><br>
+							<b>计豆子</b>： 赢家可以获得其他两家剩下的牌*底分的豆子，败方未出一张牌则扣豆子加倍，只剩一张牌则不扣，败方豆子扣到0为止 任意一方出炸弹，则可以马上获得房间底分*10的豆子，其他两家被扣除房间底分*5的豆子。
+							<br><br>
+							<b>场次</b>： 根据豆子余额进场次，超出限制则不能进低级场次
+							<br><br>
+							<b>排行</b>： 根据余牌，豆子余额排序，赢家在最上方
+						</p>
+					</div>
+				</div>
+			</div>
+			<!--免费得豆-->
+			<div class="addBean-content help-content nav-content">
+				<div class="help-bigBox">
+					<!--<img src="../images/balloon.png" alt="" />-->
+					<div class="help-con addBean-con">
+						<video class="freeVideo" src="">
+							<!--<source src="" type="video/mp4"></source>-->
+							<!--<track src="../images/2.mp4"/>-->
+						</video>
+						<span><i class="time"></i>&nbsp;秒</span>
+					</div>
+				</div>
+			</div>
+		</section>
+	</body>
+	<script src="../js/start.js" type="text/javascript" charset="utf-8"></script>
+
+</html>

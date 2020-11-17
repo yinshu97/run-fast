@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>POKER</title>
+    <link rel="stylesheet" href="../css/enter.css">
+    <script type="text/javascript" src="./js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="./js/enter.js"></script>
+</head>
+
+<body>
+    <div class="right">
+        <img src="../images/logo.png" id="logo">
+        <div class="btn">
+            <a href="loading.html"><img src="../images/start.png" class="start"></a>
+            <img src="../images/help.png" id="showhelp">
+            <img src="../images/about.png" id="showabout">
+        </div>
+    </div>
+    <div id="hide1">
+        <div id="help">
+            <p>
+                <b>发牌</b>：第一盘由拿到♠3的人先出，以后每局都由上把赢家出牌
+                <br><br>
+                <b>出牌</b>：顺时针方向轮流出牌，后一家打出的牌必须比前一家大，如果没有可以不出，要得起必须出
+                如果其他游戏者都不要，则最后出牌的一方可以出任意牌型
+                <br><br>
+                <b>牌点大小</b>：
+                本游戏的牌点由大到小排列为2,A,K,Q,J,10,9,8,7,6,5,4,3
+                <br><br>
+                <b>牌型</b>：
+                单张，对子、三同张、连对、连同三张（带任意两张）、顺子、飞机、炸弹等，炸弹能打得起任意牌型，所有牌型根据牌点确定大小
+
+            </p>
+            <img src="../images/goback.png" id="goback">
+        </div>
+        <div id="about">
+            <p>
+                <b>出牌计时</b>：
+                超过15s，强制出牌（并自动托管功能），强制出牌的一个规则（托管模式下系统优先出牌的情况：要得起上一家则打出要得起的最小的牌，为当前出任意牌的一方则出最小可出的单牌/对子/三同张/炸弹）
+                <br><br>
+                <b>计豆子</b>：
+                赢家可以获得其他两家剩下的牌*底分的豆子，败方未出一张牌则扣豆子加倍，只剩一张牌则不扣，败方豆子扣到0为止
+                任意一方出炸弹，则可以马上获得房间底分*10的豆子，其他两家被扣除房间底分*5的豆子。
+                <br><br>
+                <b>场次</b>：
+                根据豆子余额进场次，超出限制则不能进低级场次
+                <br><br>
+                <b>排行</b>：
+                根据余牌，豆子余额排序，赢家在最上方
+            </p>
+            <img src="../images/goback.png" id="goback2">
+        </div>
+
+
+    </div>
+
+    </div>
+    <script src="../js/enter.js"></script>
+
+</body>
+
+
+</html>
